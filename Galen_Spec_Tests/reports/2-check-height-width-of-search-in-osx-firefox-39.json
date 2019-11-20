@@ -1,0 +1,82 @@
+{
+  "testId" : "2-check-height-width-of-search-in-osx-firefox-39",
+  "name" : "Check height/width of search in OSX-Firefox 39",
+  "report" : {
+    "nodes" : [ {
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check   homepage.gspec --include desktop",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: homepage.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1571300638814,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "homepage.gspec",
+              "lineNumber" : 4
+            },
+            "objects" : [ {
+              "name" : "searchButton",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "width 370 to 500px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "searchButton",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "searchButton",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "370 to 500px",
+                  "realDistance" : "427px"
+                } ],
+                "highlight" : [ "searchButton" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "height 20 to 35px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "searchButton",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "searchButton",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "20 to 35px",
+                  "realDistance" : "34px"
+                } ],
+                "highlight" : [ "searchButton" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "searchButton" : {
+              "area" : [ 318, 323, 427, 34 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1571300637753,
+        "type" : "node"
+      } ],
+      "time" : 1571300631680,
+      "type" : "node"
+    } ]
+  }
+}
